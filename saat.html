@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(141, 151, 172);
+        border: 3px solid black;
+        border-radius: 50%;
+        position: relative;
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .container span {
+        position: absolute;
+        height: 500px;
+    }
+
+    .container span:not(span:nth-child(5n)){
+        font-size: 10px;
+        color: rgb(204, 197, 197);
+    }
+
+    .container span:nth-child(5n){
+        font-size: 15px;
+    }
+
+    .container span:nth-child(1){
+        transform: rotate(6deg);
+    }
+
+    .container span:nth-child(2){
+        transform: rotate(12deg);
+    }
+
+    .container span:nth-child(3){
+        transform: rotate(18deg);
+    }
+
+    .container span:nth-child(4){
+        transform: rotate(24deg);
+    }
+
+    .container span:nth-child(5){
+        transform: rotate(30deg);
+    }
+
+    .container span:nth-child(6){
+        transform: rotate(36deg);
+    }
+
+    .container span:nth-child(7){
+        transform: rotate(42deg);
+    }
+
+    .container span:nth-child(8){
+        transform: rotate(48deg);
+    }
+
+    .container span:nth-child(9){
+        transform: rotate(54deg);
+    }
+
+    .container span:nth-child(10){
+        transform: rotate(60deg);
+    }
+
+    .container span:nth-child(11){
+        transform: rotate(66deg);
+    }
+
+    .container span:nth-child(12){
+        transform: rotate(72deg);
+    }
+
+    .container span:nth-child(13){
+        transform: rotate(78deg);
+    }
+
+    .container span:nth-child(14){
+        transform: rotate(84deg);
+    }
+
+    .container span:nth-child(15){
+        transform: rotate(90deg);
+    }
+
+    .container span:nth-child(16){
+        transform: rotate(96deg);
+    }
+
+    .container span:nth-child(17){
+        transform: rotate(102deg);
+    }
+
+    .container span:nth-child(18){
+        transform: rotate(108deg);
+    }
+
+    .container span:nth-child(19){
+        transform: rotate(114deg);
+    }
+
+    .container span:nth-child(20){
+        transform: rotate(120deg);
+    }
+
+    .container span:nth-child(21){
+        transform: rotate(126deg);
+    }
+
+    .container span:nth-child(22){
+        transform: rotate(132deg);
+    }
+
+    .container span:nth-child(23){
+        transform: rotate(138deg);
+    }
+
+    .container span:nth-child(24){
+        transform: rotate(144deg);
+    }
+
+    .container span:nth-child(25){
+        transform: rotate(150deg);
+    }
+
+    .container span:nth-child(26){
+        transform: rotate(156deg);
+    }
+
+    .container span:nth-child(27){
+        transform: rotate(162deg);
+    }
+
+    .container span:nth-child(28){
+        transform: rotate(168deg);
+    }
+
+    .container span:nth-child(29){
+        transform: rotate(174deg);
+    }
+
+    .container span:nth-child(30){
+        transform: rotate(180deg);
+
+    }
+
+    .container span:nth-child(31){
+        transform: rotate(186deg);
+    }
+
+    .container span:nth-child(32){
+        transform: rotate(192deg);
+    }
+
+    .container span:nth-child(33){
+        transform: rotate(198deg);
+    }
+
+    .container span:nth-child(34){
+        transform: rotate(204deg);
+    }
+
+    .container span:nth-child(35){
+        transform: rotate(210deg);
+    }
+
+    .container span:nth-child(36){
+        transform: rotate(216deg);
+    }
+
+    .container span:nth-child(37){
+        transform: rotate(222deg);
+    }
+
+    .container span:nth-child(38){
+        transform: rotate(228deg);
+    }
+
+    .container span:nth-child(39){
+        transform: rotate(234deg);
+    }
+
+    .container span:nth-child(40){
+        transform: rotate(240deg);
+    }
+
+    .container span:nth-child(41){
+        transform: rotate(246deg);
+    }
+
+    .container span:nth-child(42){
+        transform: rotate(252deg);
+    }
+
+    .container span:nth-child(43){
+        transform: rotate(258deg);
+    }
+
+    .container span:nth-child(44){
+        transform: rotate(264deg);
+    }
+
+    .container span:nth-child(45){
+        transform: rotate(270deg);
+    }
+
+    .container span:nth-child(46){
+        transform: rotate(276deg);
+    }
+
+    .container span:nth-child(47){
+        transform: rotate(282deg);
+    }
+
+    .container span:nth-child(48){
+        transform: rotate(288deg);
+    }
+
+    .container span:nth-child(49){
+        transform: rotate(294deg);
+    }
+
+    .container span:nth-child(50){
+        transform: rotate(300deg);
+    }
+
+    .container span:nth-child(51){
+        transform: rotate(306deg);
+    }
+
+    
+    .container span:nth-child(52){
+        transform: rotate(312deg);
+    }
+
+    .container span:nth-child(53){
+        transform: rotate(318deg);
+    }
+
+    .container span:nth-child(54){
+        transform: rotate(324deg);
+    }
+
+    .container span:nth-child(55){
+        transform: rotate(330deg);
+    }
+
+    .container span:nth-child(56){
+        transform: rotate(336deg);
+    }
+
+    .container span:nth-child(57){
+        transform: rotate(342deg);
+    }
+
+    .container span:nth-child(58){
+        transform: rotate(348deg);
+    }
+
+    .container span:nth-child(59){
+        transform: rotate(354deg);
+    }
+
+    .container span:nth-child(60){
+        transform: rotate(360deg);
+    }
+
+    .container .akrep {
+        top: 50%;
+        transform-origin: top;
+        width: 5px;
+        height: 150px;
+        background-color: black;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .container .yelkovan {
+        top: 50%;
+        transform-origin: top;
+        width: 5px;
+        height: 180px;
+        background-color: black;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .container .saniye {
+        top: 50%;
+        transform-origin: top;
+        width: 3px;
+        height: 210px;
+        background-color: black;
+    }
+
+    .container .yuvarlak {
+        top: 50%;  
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        margin: -8px;
+    }
+
+    .saat {
+        width: 600px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .saat span {
+        font-size: 70px;
+    }
+    
+
+</style>
+<body>
+    
+    <div class="container">
+        <span>|</span><span>|</span><span>|</span><span>|</span><span>1</span> <span>|</span><span>|</span><span>|</span><span>|</span><span>2</span><span>|</span><span>|</span><span>|</span><span>|</span><span>3</span><span>|</span><span>|</span><span>|</span><span>|</span><span>4</span><span>|</span><span>|</span><span>|</span><span>|</span><span>5</span><span>|</span><span>|</span><span>|</span><span>|</span><span>6</span><span>|</span><span>|</span><span>|</span><span>|</span><span>7</span><span>|</span><span>|</span><span>|</span><span>|</span><span>8</span><span>|</span><span>|</span><span>|</span><span>|</span><span>9</span><span>|</span><span>|</span><span>|</span><span>|</span><span>10</span><span>|</span><span>|</span><span>|</span><span>|</span><span>11</span><span>|</span><span>|</span><span>|</span><span>|</span><span>12</span>
+        <span id="akrep" class="akrep"></span>
+        <span id="yelkovan" class="yelkovan"></span>
+        <span id="saniye" class="saniye"></span>
+        <span class="yuvarlak"></span>
+    </div>
+    <div class="saat">
+        <span id="tarih"></span>
+    </div>
+
+
+
+    <script>
+        var saniye = document.getElementById("saniye");
+        var yelkovan = document.getElementById("yelkovan");
+        var akrep = document.getElementById("akrep");
+        
+        aci = 0;
+        setInterval(function(){
+            var tarih = new Date();
+            var second = tarih.getSeconds();
+            var minute = tarih.getMinutes();
+            var hour = tarih.getHours();
+            document.getElementById("tarih").innerHTML = hour + ":"+minute+":"+second;
+            if(hour == 00){
+                hour = 12;
+            }
+            if(hour > 12){
+                hour -= 12;
+            }
+
+            if(second == 0 || aci == 1){
+                aci = 0;
+            }
+            saniye.style.transform = "rotate("+(180 + second*6)+"deg)";
+            yelkovan.style.transform = "rotate("+(180 + minute*6 + aci)+"deg)";
+            akrep.style.transform = "rotate("+(180 + hour * 30 + minute * 0.5)+"deg)";
+            if(saniye.style.transform == "rotate(360deg)"){
+                saniye.style.transform = "rotate(0deg)";
+            }
+
+            if(yelkovan.style.transform == "rotate(360deg)"){
+                yelkovan.style.transform = "rotate(0deg)";
+            }
+
+            if(akrep.style.transform == "rotate(360deg)"){
+                akrep.style.transform = "rotate(0deg)";
+            }
+            aci+= 0.1;
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
